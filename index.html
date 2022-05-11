@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="javascript\script.js"></script>
+</head>
+<body>
+<h2>What JS do?</h2>
+<p id="Exercise_1">JS can change HTML content</p>
+<button type="button" onclick='document.getElementById("Exercise_1").innerHTML = "Hello JS!!!"'>
+    Click me!
+</button>
+<hr>
+<p id="Exercise_2">In this case JS changes the value of the src (source) attribute of an image</p>
+
+<button type="button" onclick='turnOnTheLight();'>
+    Turn on the light
+</button>
+
+<img id = "myImage" src = "images/pic_bulboff.gif" style = "width: 100px;"/>
+
+<button type="button" onclick='turnOffTheLight();'>
+    Turn off the light
+</button>
+
+<hr>
+<p id="Exercise_3">JS can change the style of HTML element</p>
+
+<button type="button" onclick='changeStyle();'>
+    Click Me!
+</button>
+
+<hr>
+<p id="Exercise_4">JS can hide HTML elements</p>
+
+<button type="button" onclick='hideOrShow();'>
+    Click Me!
+</button>
+
+<hr>
+
+<p id="Exercise_5">JS can hide HTML elements</p>
+
+<p>Never call document.write after the document has finished loading.
+    It will overwrite the whole document.
+</p>
+
+<script>
+    document.write(5+26);
+</script>
+<br>
+<button type="button" onclick='window.alert(10+13);'>
+    Call Alert
+</button>
+
+<script>
+    console.log('Hello World!!!');
+</script>
+
+<hr>
+
+<p id="Exercise_6">Click the button to print the current page</p>
+
+<button type="button" onclick='printPage();'>
+    Click me!!!
+</button>
+
+<hr>
+
+<form action="post">
+    <select name = "films" id = "films" >
+        <option value ="GW1">GW1</option>
+        <option value ="HP">HP</option>
+        <option value ="PU">PU</option>
+        <option value ="DS">DS</option>
+        <option value ="AS">AS</option>
+    </select>
+</form>
+
+</body>
+</html>
