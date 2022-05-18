@@ -25,3 +25,19 @@ function hideOrShow(){
 function printPage(){
     window.print();    
 }
+
+let flag_sw = true;
+function ChangeBattalion(){
+    if(flag_sw){
+        flag_sw = false;
+        document.getElementById("Battalion").src='images/212th_battalion.jpg';
+        document.getElementById("Batton").innerHTML = "Change battalion: 212th battalion";
+    }
+    else{
+        flag_sw = true;
+        document.getElementById("Battalion").src='images/332nd_battalion.jpg';
+        document.getElementById("Batton").innerHTML = "Change battalion: 332th battalion";
+    }
+ }
+
+
