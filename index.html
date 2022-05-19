@@ -2,6 +2,7 @@
 <html>
 <head>
     <script src="javascript\script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <h2>What JS do?</h2>
@@ -83,5 +84,50 @@
 <button id = "Batton" type="button" onclick='ChangeBattalion();'>
     Change battalion: 212th battalion
 </button>
+
+<hr>
+<p>Dropdown menu using only css</p>
+<br/>
+<br/>
+
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 2</a>
+    </div>
+</div>
+
+<hr>
+<p>Dropdown menu using javascript</p>
+<br/>
+<br/>
+<div class="dropdownJS">
+    <button class="dropbtnJS" onclick="showMenu();">Dropdown</button>
+    <div id="nestedMenu" class="dropdown-contentJS">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 2</a>
+    </div>
+</div>
+
+
+<hr>
+
+<label for="text">Napisz swoją historię</label>
+<br/>
+<textarea id="text" rows="5" cols="30"></textarea>
+<br/>
+<button type="button" onclick='analiza();'>
+    Analizyj
+</button>
+<br/>
+<p id="result"></p>
+<hr>
+
+
 </body>
 </html>

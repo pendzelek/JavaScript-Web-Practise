@@ -40,4 +40,29 @@ function ChangeBattalion(){
     }
  }
 
+ function analiza(){
+    const text = document.getElementById("text").value;
+    let tab = text.split(' ');
+    console.log(tab);
+    tab = tab.filter(a => String(a).trim());
+    // ltrim() rtrim()
+    console.log(tab);
+    document.getElementById("result").innerHTML = tab.length;
+ }
 
+ function showMenu(){
+     document.getElementById("nestedMenu").classList.toggle("show");
+ }
+
+ window.onclick = function(event){
+     if(event.target.matches('.dropbtnJS')){
+         var dropdowns = document.getElementById("drop-contentJS");
+         var i;
+         for(i = 0; i < dropdowns.length; i++){
+             var openDropdown = dropdowns[i];
+             if(openDropdown.classList.contains("show")){
+                 openDropdown.classList.remove("show");
+             }
+         }
+     }
+ }
