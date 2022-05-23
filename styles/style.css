@@ -89,3 +89,47 @@
 body{
     padding: 20%;
 }
+
+.sidenav{
+    height:100%;
+    width:200px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(157, 157, 157);
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.sidenav a:hover, .dropdown-btn:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+.active{
+    background-color: green;
+    color: white;
+}
+
+.dropdown-container{
+    display: none;
+    background-color:rgb(46, 46, 46) ;
+    padding-left: 8px;
+}

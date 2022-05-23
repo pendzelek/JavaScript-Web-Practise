@@ -54,15 +54,30 @@ function ChangeBattalion(){
      document.getElementById("nestedMenu").classList.toggle("show");
  }
 
- window.onclick = function(event){
-     if(event.target.matches('.dropbtnJS')){
-         var dropdowns = document.getElementById("drop-contentJS");
-         var i;
-         for(i = 0; i < dropdowns.length; i++){
-             var openDropdown = dropdowns[i];
-             if(openDropdown.classList.contains("show")){
-                 openDropdown.classList.remove("show");
-             }
-         }
-     }
- }
+ window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnJS')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentJS");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+let flagMenu = false;
+  function showNestedMenu(){
+      console.log("log " + flagMenu);
+    if(!flagMenu){
+        flagMenu = false;
+        document.getElementsByClassName("dropdown-btn").classList.toggle("active");
+        document.getElementsByClassName("dropdown-container").style.display = "block";
+    }
+    else{
+        flagMenu = true;
+        document.getElementsByClassName("dropdown-btn").classList.remove("active");
+        document.getElementsByClassName("dropdown-container").style.display = "none";
+    }
+  }
