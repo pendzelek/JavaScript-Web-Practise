@@ -70,14 +70,16 @@ function ChangeBattalion(){
 let flagMenu = false;
   function showNestedMenu(){
       console.log("log " + flagMenu);
+      var btn = document.getElementById("dropdown-btn");
+      var container = document.getElementById("dropdown-container")
     if(!flagMenu){
-        flagMenu = false;
-        document.getElementsByClassName("dropdown-btn").classList.toggle("active");
-        document.getElementsByClassName("dropdown-container").style.display = "block";
+        flagMenu = true;
+        btn.classList.toggle("active");
+        container.style = "display:block;";
     }
     else{
-        flagMenu = true;
-        document.getElementsByClassName("dropdown-btn").classList.remove("active");
-        document.getElementsByClassName("dropdown-container").style.display = "none";
+        flagMenu = false;
+        btn.classList.remove("active");
+        container.style = "display:none;";
     }
   }
